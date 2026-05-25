@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://localhost/web/coinbusiness/landing/ -->
+<html lang="bn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coinstore.bd e matro 3000 takay online business shuru korar sujog. Proti business-e 25% profit, 80% repeat customer, ebong mobile diyei business porichalona korar sujog.">
+    <title>Coinstore.bd - Matro 3000 Takay Online Business Shuru Korun</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Font -->
+    <link href="assets/css2" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css">
+    
+<link rel="stylesheet" href="css/style(1).css">
+<style>
+    /* Completely Hide Header for Landing Page */
+    header { 
+        display: none !important; 
+    }
+        body {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+    .ref-toast {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: rgba(30, 41, 59, 0.9);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(59, 130, 246, 0.3);
+        color: white;
+        padding: 15px 25px;
+        border-radius: 15px;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        animation: slideIn 0.5s ease forwards;
+    }
+    @keyframes slideIn {
+        from { transform: translateX(100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+    }
+    .ref-avatar {
+        width: 40px;
+        height: 40px;
+        background: #3b82f6;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+    @media (max-width: 991px) {
+        body {
+            padding-bottom: 0 !important;
+        }
+    }</style>    
+    <style>
+        header {
+            background-color: #0a192f;
+            color: #ffffff;
+            padding: 0.8rem 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: nowrap; /* Forces elements to stay in one line */
+        }
+
+        .d-flex.align-items-center.ms-auto {
+            flex-wrap: nowrap;
+            display: flex !important;
+            align-items: center;
+        }
+
+        .search-container {
+            margin-right: 15px !important;
+            flex-shrink: 1;
+            min-width: 150px;
+        }
+
+        @media (max-width: 992px) {
+            .search-container .input-group {
+                width: 150px !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .search-container {
+                display: block !important;
+                margin-right: 10px;
+            }
+            .search-container .input-group {
+                width: 120px !important;
+            }
+            .search-container input {
+                font-size: 0.7rem !important;
+            }
+            .search-container button {
+                font-size: 0.7rem !important;
+                padding: 3px 8px !important;
+            }
+        }
+
+        /* Layout Optimization */
+        section {
+            padding: 40px 0 !important;
+            background-color: #0a192f !important;
+        }
+        .section-title {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .section-title h2 {
+            font-size: 1.8rem;
+            color: #ffffff;
+            font-weight: 700;
+        }
+        .feature-card, .package-card {
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.03);
+            transition: 0.3s;
+            height: 100%;
+        }
+        
+        /* Responsive Spacing */
+        @media (max-width: 768px) {
+            section {
+                padding: 30px 0 !important;
+            }
+            .section-title {
+                margin-bottom: 20px;
+            }
+            .section-title h2 {
+                font-size: 1.5rem;
+            }
+        }
+        .social-link {
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .social-link:hover {
+            background: #2ecc71;
+            color: #fff;
+            border-color: #2ecc71;
+        }
+
+        .logo-icon:hover {
+            transform: rotate(15deg) scale(1.1);
+        }
+
+        .search-container {
+            flex: 1;
+            margin: 0 10px;
+            min-width: 100px;
+            max-width: 250px;
+        }
+
+        .search-container form {
+            display: flex;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+        .search-container input {
+            width: 100%;
+            padding: 0.4rem 0.8rem;
+            background: transparent;
+            border: none;
+            color: white;
+            outline: none;
+            font-size: 0.75rem;
+        }
+
+        .search-container input::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .search-container button {
+            background: transparent;
+            border: none;
+            padding: 0 0.8rem;
+            cursor: pointer;
+            font-size: 0.9rem;
+            color: #ffd700;
+        }
+
+        .lang-switch-wrap {
+            margin-left: auto;
+            margin-right: 15px;
+        }
+
+        .lang-link {
+            text-decoration: none;
+            color: #ffd700;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 6px 15px;
+            border: 1px solid rgba(255, 215, 0, 0.4);
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            transition: 0.3s;
+        }
+
+        .lang-link i {
+            font-size: 1.1rem;
+        }
+
+        .menu-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            width: 42px;
+            height: 42px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            border-radius: 50%;
+            color: #ffd700;
+            font-size: 1.3rem;
+        }
+
+        nav#nav-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 80%;
+            max-width: 300px;
+            height: 100vh;
+            background-color: #0a192f;
+            transition: 0.3s ease;
+            z-index: 1001;
+            box-shadow: -5px 0 15px rgba(0,0,0,0.3);
+            display: block;
+        }
+
+        nav#nav-menu.active {
+            right: 0;
+        }
+
+        .nav-close {
+            position: absolute;
+            top: 0.8rem;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: #ffd700;
+            font-size: 1.2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 80px 0 0 0;
+            margin: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 1.2rem 2rem;
+            color: #ffffff !important;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #ffd700;
+            color: #0a192f !important;
+            padding-left: 2.5rem;
+        }
+
+        nav ul li a i {
+            font-size: 1.3rem;
+            width: 30px;
+        }
+
+        @media (max-width: 768px) {
+            body { padding-top: 70px; }
+            .search-container { margin: 0 5px; }
+            .lang-switch-wrap { margin-right: 8px; }
+            .lang-link { padding: 4px 10px; font-size: 0.7rem; }
+        }
+    </style>
+</head>
+<body cz-shortcut-listen="true">
+
+<!-- Status Alert Container -->
+<div id="status_alert_container" class="container" style="position: fixed; top: 75px; z-index: 9999; display: none;">
+    <div id="status_alert_box" class="alert alert-dismissible fade show rounded-4 shadow-sm" role="alert">
+        <span id="status_alert_message"></span>
+        <button type="button" class="btn-close" onclick="document.getElementById('status_alert_container').style.display='none'"></button>
+    </div>
+</div>
+
+<header style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background: #0a192f; position: fixed; top: 0; width: 100%; z-index: 1000;">
+    <div class="logo">
+        <a href="http://localhost/web/coinbusiness/index.php">
+            <img src="images/logo_1775895910.png" alt="Logo" style="height: 35px;">
+        </a>
+    </div>
+
+    <div style="display: flex; align-items: center; gap: 10px;">
+        <div class="input-group" style="width: 200px; background: #1a2a47; border: 1px solid #2ecc71; border-radius: 20px; overflow: hidden; padding: 1px;">
+            <input type="text" id="header_trxid_search" class="form-control form-control-sm" placeholder="TrxID" style="background: transparent; border: none; color: white; padding: 2px 10px; border-radius: 20px; font-size: 0.7rem; height: 28px;">
+            <button type="button" onclick="openCountdownPopup()" class="btn btn-sm btn-danger" style="background: #2ecc71; border: none; border-radius: 20px; padding: 0 10px; font-size: 0.7rem; font-weight: 600; height: 28px;">Check</button>
+        </div>
+
+    <!-- Countdown Popup -->
+    <div id="countdown-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 2000; justify-content: center; align-items: center;">
+        <div style="background: #0a192f; padding: 25px; border-radius: 15px; border: 1px solid #2ecc71; text-align: center; max-width: 320px; width: 90%;">
+            <h5 style="color: white; margin-bottom: 15px;">অর্ডার স্ট্যাটাস</h5>
+            
+            <div id="order-details-area" style="text-align: left; color: #fff; margin-bottom: 20px; font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px;">
+                <p style="margin-bottom: 5px;"><strong>Status:</strong> <span id="popup-status" style="color: #2ecc71;">Checking...</span></p>
+                <p style="margin-bottom: 5px;"><strong>Type:</strong> <span id="popup-type">--</span></p>
+                <p style="margin-bottom: 5px;"><strong>Budget:</strong> <span id="popup-budget">--</span></p>
+                <p style="margin-bottom: 5px;"><strong>Time:</strong> <span id="popup-time">--</span></p>
+            </div>
+
+            <div style="color: rgba(255,255,255,0.6); font-size: 0.8rem; margin-bottom: 10px;">সময় বাকি আছে:</div>
+            <div id="timer" style="font-size: 2rem; color: #fff; font-weight: 800; margin-bottom: 20px;">10:00</div>
+            
+            <div id="support-btn-area" style="display: none;">
+                <a href="http://localhost/web/coinbusiness/landing/#" class="btn btn-primary w-100 mb-2">Contact Support</a>
+            </div>
+            <button onclick="closeCountdownPopup()" class="btn btn-outline-secondary w-100 btn-sm">Close</button>
+        </div>
+    </div>
+
+        <div class="menu-toggle" id="mobile-menu-trigger" style="color: #ffd700; cursor: pointer; font-size: 1.2rem;">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
+    <nav id="nav-menu">
+        <div class="nav-close" id="nav-close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul>
+            <li>
+                                    <a href="http://localhost/web/coinbusiness/landing/?lang=en"><i class="fas fa-globe me-2"></i> English (EN)</a>
+                            </li>
+            <li><a href="http://localhost/web/coinbusiness/shop/all-services.php"><i class="fas fa-home me-2"></i> হোম</a></li>
+            <li><a href="http://localhost/web/coinbusiness/shop/TikTokTopUp.php?tab=promote"><i class="fas fa-bullhorn me-2"></i> প্রমোট</a></li>
+            <li><a href="http://localhost/web/coinbusiness/shop/TikTokTopUp.php"><i class="fas fa-coins me-2"></i> কয়েন নিন</a></li>
+            <li><a href="http://localhost/web/coinbusiness/landing/index.php"><i class="fas fa-briefcase me-2"></i> বিজনেস</a></li>
+            <li><a href="http://localhost/web/coinbusiness/landing/#"><i class="fas fa-info-circle me-2"></i> আমাদের সম্পর্কে</a></li>
+            <li><a href="http://localhost/web/coinbusiness/landing/#"><i class="fas fa-envelope me-2"></i> যোগাযোগ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuTrigger = document.getElementById('mobile-menu-trigger');
+        const navMenu = document.getElementById('nav-menu');
+        const closeBtn = document.getElementById('nav-close-btn');
+
+        if(menuTrigger && navMenu) {
+            menuTrigger.addEventListener('click', function() {
+                navMenu.classList.add('active');
+            });
+        }
+
+        if(closeBtn && navMenu) {
+            closeBtn.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+            });
+        }
+
+        document.addEventListener('click', function(event) {
+            if (navMenu && navMenu.classList.contains('active') && 
+                !navMenu.contains(event.target) && 
+                !menuTrigger.contains(event.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+    });
+
+    function checkHeaderStatus() {
+        const trxid = document.getElementById('header_trxid_search').value.trim();
+        const alertBox = document.getElementById('status_alert_box');
+        const alertMsg = document.getElementById('status_alert_message');
+        const container = document.getElementById('status_alert_container');
+
+        if (!trxid) {
+            alert("Doya kore TrxID din.");
+            return;
+        }
+        
+        fetch('../shop/check_status.php', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+            body: 'trxid=' + encodeURIComponent(trxid)
+        })
+        .then(response => {
+            if (!response.ok) {
+                return response.text().then(text => { throw new Error(text); });
+            }
+            return response.json();
+        })
+        .then(data => {
+            alertMsg.innerText = data.message;
+            alertBox.className = 'alert alert-dismissible fade show rounded-4 shadow-sm ' + (data.status === 'success' ? 'alert-success' : 'alert-danger');
+            container.style.display = 'block';
+            setTimeout(() => { container.style.display = 'none'; }, 8000);
+        })
+        .catch(error => {
+            console.error("Fetch Error:", error);
+            alert("Error: Something went wrong.");
+        });
+    }
+    function openCountdownPopup() {
+        const trxid = document.getElementById('header_trxid_search').value.trim();
+        if (!trxid) {
+            alert("দয়া করে ট্রানজেকশন আইডি দিন।");
+            return;
+        }
+
+        document.getElementById('countdown-modal').style.display = 'flex';
+        
+        // Fetch order details
+        fetch('../shop/check_status.php', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+            body: 'trxid=' + encodeURIComponent(trxid)
+        })
+        .then(response => response.json())
+        .then(data => {
+            if(data.status === 'success' && data.order) {
+                document.getElementById('popup-status').innerText = data.order.status || "--";
+                document.getElementById('popup-type').innerText = data.order.service_type || "--";
+                document.getElementById('popup-budget').innerText = (data.order.budget ? data.order.budget + ' BDT' : "--");
+                document.getElementById('popup-time').innerText = data.order.created_at || "--";
+                document.getElementById('order-details-area').style.display = 'block';
+
+                // Check if order is older than 5 minutes
+                const orderCreatedAt = new Date(data.order.created_at); // Assuming created_at is in a format Date can parse
+                const currentTime = new Date();
+                const timeDifferenceInSeconds = (currentTime.getTime() - orderCreatedAt.getTime()) / 1000;
+
+                if (timeDifferenceInSeconds > 300) { // 300 seconds = 5 minutes
+                    supportBtn.style.display = 'block';
+                }
+                
+            } else {
+                // If status is not success or no order data, display 'Not Found' message
+                document.getElementById('popup-status').innerText = "Order pawa jayni!";
+                document.getElementById('popup-type').innerText = "--";
+                document.getElementById('popup-budget').innerText = "--";
+                document.getElementById('popup-time').innerText = "--";
+                document.getElementById('order-details-area').style.display = 'block'; 
+            }
+        })
+        .catch(error => {
+            console.error("Fetch Error:", error);
+            document.getElementById('popup-status').innerText = "Error fetching order data.";
+            document.getElementById('popup-type').innerText = "--";
+            document.getElementById('popup-budget').innerText = "--";
+            document.getElementById('popup-time').innerText = "--";
+            document.getElementById('order-details-area').style.display = 'block';
+        });
+
+        let timeLeft = 600; // 10 minutes
+        const timerDisplay = document.getElementById('timer');
+        const supportBtn = document.getElementById('support-btn-area');
+
+        const interval = setInterval(() => {
+            timeLeft--;
+            let mins = Math.floor(timeLeft / 60);
+            let secs = timeLeft % 60;
+            timerDisplay.innerText = `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+
+            if (timeLeft <= 0) {
+                clearInterval(interval);
+                supportBtn.style.display = 'block';
+            }
+        }, 1000);
+    }
+
+    function closeCountdownPopup() {
+        document.getElementById('countdown-modal').style.display = 'none';
+        location.reload();
+    }
+</script>
+
+
+<script>
+    setTimeout(() => {
+        const toast = document.getElementById('refToast');
+        if(toast) {
+            toast.style.transition = '0.5s';
+            toast.style.opacity = '0';
+            setTimeout(() => toast.remove(), 500);
+        }
+    }, 2000); // 2 seconds
+</script>
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="container">
+
+    <div class="row align-items-center g-5">
+
+      <div class="col-lg-6">
+
+        <h1>
+          মাত্র ৩০০০ টাকায়
+          শুরু করুন
+          <span>অনলাইন বিজনেস</span>
+        </h1>
+
+        <p>
+          ২৫% পর্যন্ত প্রফিট, ৮০%+ রিপিট কাস্টমার
+          এবং যেকোনো জায়গা থেকে ব্যবসা পরিচালনার সুযোগ।
+        </p>
+
+        <div class="stats-card">
+
+          <div class="row text-center">
+
+            <div class="col-4">
+              <div class="stats-item">
+                <h3>২৫%</h3> 
+                <p>নিট-প্রফিট</p>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="stats-item">
+                <h3>৮০%+</h3>
+                <p>রিপিট-Sell</p>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="stats-item">
+                <h3>৩০০০৳</h3>
+                <p>স্বল্প-পুজি</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- BUTTONS -->
+
+        <div class="d-flex gap-3 flex-wrap mt-4 justify-content-center justify-content-lg-start">
+
+          <a href="payment.html" class="btn btn-main">
+            🔥 এখনই এনরোল করুন
+          </a>
+
+          <a href="javascript:void(0)" id="video-btn" class="btn btn-outline-custom">
+            ▶ ভিডিও দেখুন
+          </a>
+        </div>
+
+      </div>
+
+      <div class="col-lg-6">
+
+        <div class="hero-card">
+
+          <img src="images/images.jpg" alt="Online Business Startup Opportunity">
+
+          <div class="floating-badge">
+
+            <small>Net Profit</small>
+
+            <h4>25%</h4>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section data-aos="fade-right">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>কেন এই বিজনেস শুরু করবেন?</h2>
+    </div>
+
+    <!-- Desktop -->
+
+    <div class="row g-4 d-none d-md-flex">
+
+      <div class="col-md-6 col-lg-3">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="bi bi-clock-history"></i>
+          </div>
+          <h5>Long Term Business</h5>
+          <p>দীর্ঘ সময় ধরে ব্যবসা পরিচালনা করা সম্ভব।</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="bi bi-people-fill"></i>
+          </div>
+          <h5>Repeat Customer</h5>
+          <p>৮০%+ কাস্টমার বারবার অর্ডার করে।</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="bi bi-wallet2"></i>
+          </div>
+          <h5>Low Investment</h5>
+          <p>মাত্র ৩০০০ টাকা দিয়েই শুরু করা সম্ভব।</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="bi bi-phone-fill"></i>
+          </div>
+          <h5>Work Anywhere</h5>
+          <p>শুধু মোবাইল দিয়েই ব্যবসা পরিচালনা সম্ভব।</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Mobile -->
+
+    <div class="d-block d-md-none">
+
+      <div class="mobile-combined-card">
+
+        <div class="mobile-item">
+
+          <div class="mobile-icon">
+            <i class="bi bi-clock-history"></i>
+          </div>
+
+          <div class="mobile-content">
+            <h5>Long Term Business</h5>
+            <p>দীর্ঘ সময় ধরে ব্যবসা পরিচালনা করা সম্ভব।</p>
+          </div>
+
+        </div>
+
+        <div class="mobile-item">
+
+          <div class="mobile-icon">
+            <i class="bi bi-people-fill"></i>
+          </div>
+
+          <div class="mobile-content">
+            <h5>Repeat Customer</h5>
+            <p>৮০%+ কাস্টমার বারবার অর্ডার করে।</p>
+          </div>
+
+        </div>
+
+        <div class="mobile-item">
+
+          <div class="mobile-icon">
+            <i class="bi bi-wallet2"></i>
+          </div>
+
+          <div class="mobile-content">
+            <h5>Low Investment</h5>
+            <p>মাত্র ৩০০০ টাকা দিয়েই শুরু করা সম্ভব।</p>
+          </div>
+
+        </div>
+
+        <div class="mobile-item">
+
+          <div class="mobile-icon">
+            <i class="bi bi-phone-fill"></i>
+          </div>
+
+          <div class="mobile-content">
+            <h5>Work Anywhere</h5>
+            <p>শুধু মোবাইল দিয়েই ব্যবসা পরিচালনা সম্ভব।</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PACKAGES -->
+
+<section data-aos="fade-left">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>এই ৩০০০ টাকায় কী কী পাচ্ছেন?</h2>
+    </div>
+
+    <!-- Desktop -->
+
+    <div class="row g-4 d-none d-md-flex">
+
+      <div class="col-md-6 col-lg-3">
+        <div class="package-card">
+          <div class="package-number">01</div>
+          <img src="images/196578.png">
+          <h4>Visa Card</h4>
+          <p><b>10 USD = 1300 টাকা।</b></p>
+          <p>যা ব্যাংকের মাধ্যমে করতে পাসপোর্টসহ ১০–১২ হাজার টাকা লাগতে পারে.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="package-card">
+          <div class="package-number">02</div>
+          <img src="images/2489756.png">
+          <h4>Account Balance</h4>
+          <p><b>5.5 USD = 700 টাকা।</b></p>
+          <p>এটা আপনার একাউন্ট এ থাকবে এবং এটাই আপনার বিজনেসের পুজি।</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="package-card">
+          <div class="package-number">03</div>
+          <img src="images/226770.png">
+          <h4>Android App</h4>
+          <p><b>প্রিমিয়াম প্রাইস = 1000 টাকা।</b></p>
+          <p>এটা কম্পিউটার এর বিকল্প হিসেবে কাজ করবে, যেকোনো জায়গা থেকে কাজ করতে পারবেন।</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="package-card">
+          <div class="package-number">04</div>
+          <img src="images/1006771.png">
+          <h4>Website Code</h4>
+          <p><b>সম্পূর্ণ FREE Website Code</b></p>
+          <p>কাস্টমার বাড়লে ওয়েবসাইট থাকলে ভালো এবং বিসনেস বড় করা সহজ হয়।</p>
+        </div> 
+      </div>
+ 
+    </div>
+
+    <!-- Mobile -->
+
+    <div class="d-block d-md-none">
+
+      <div class="mobile-combined-card">
+
+        <div class="mobile-item">
+
+          <div class="mobile-icon">
+            <img src="images/196578.png">
+          </div>
+
+          <div class="mobile-content">
+            <h5>Visa Card</h5>
+            <p>10 USD = 1300 টাকা</p>
+          </div>
+
+        </div>
+
+        <div class="mobile-item">
+
+          <div class="mobile-icon">
+            <img src="images/2489756.png">
+          </div>
+
+          <div class="mobile-content">
+            <h5>Account Balance</h5>
+            <p>5.5 USD = 700 টাকা</p>
+          </div>
+
+        </div>
+
+        <div class="mobile-item">
+
+          <div class="mobile-icon">
+            <img src="images/226770.png">
+          </div>
+
+          <div class="mobile-content">
+            <h5>Android App</h5>
+            <p>প্রিমিয়াম প্রাইস = 1000 টাকা।</p>
+          </div>
+
+        </div>
+
+        <div class="mobile-item">
+
+          <div class="mobile-icon">
+            <img src="images/1006771.png">
+          </div>
+
+          <div class="mobile-content">
+            <h5>Website Code</h5>
+            <p>সম্পূর্ণ FREE Website Code</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- COURSE -->
+
+<section data-aos="fade-right">
+
+  <div class="container">
+
+    <div class="course-box">
+
+      <div class="row align-items-center g-5">
+
+<style>
+    .course-list .course-item {
+        background: #112240;
+        margin-bottom: 12px;
+        padding: 18px 25px;
+        border-radius: 16px;
+        border-left: 5px solid #2ecc71;
+        font-weight: 500;
+        color: #ffffff;
+        transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .course-list .course-item:hover {
+        background: #172a45;
+        padding-left: 35px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+    .motivational-box {
+        background: linear-gradient(145deg, #112240, #172a45);
+        border: 1px solid rgba(46, 204, 113, 0.4);
+        padding: 40px;
+        border-radius: 30px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    }
+    .motivational-box::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle at top right, rgba(46, 204, 113, 0.15), transparent);
+        pointer-events: none;
+    }
+    .motivational-box h4 {
+        color: #2ecc71 !important;
+        font-size: 1.5rem !important;
+    }
+    .motivational-box p {
+        color: #e0e0e0 !important;
+        font-size: 1.05rem !important;
+        margin-bottom: 25px !important;
+    }
+    .motivational-box .badge {
+        background-color: rgba(46, 204, 113, 0.2) !important;
+        color: #2ecc71 !important;
+        border: 1px solid #2ecc71;
+    }
+</style>
+
+        <div class="col-lg-6">
+
+          <h2 class="fw-bold mb-4 text-white">
+            কোর্সে যা যা থাকছে
+          </h2>
+
+          <ul class="course-list list-unstyled">
+
+            <li class="course-item">✅ Full Video Tutorial</li>
+            <li class="course-item">✅ Business Setup Guide</li>
+            <li class="course-item">✅ Android App Setup</li>
+            <li class="course-item">✅ Customer Handling System</li>
+            <li class="course-item">✅ Support &amp; Guidance</li> 
+
+          </ul>
+
+        </div>
+
+        <div class="col-lg-6">
+            <div class="motivational-box">
+                <h4 class="text-success mb-3 fw-bold"><i class="bi bi-rocket-takeoff"></i> সময় নষ্ট না করে শুরু করুন!</h4>
+                <p class="text-white-75" style="line-height: 1.6;">দক্ষতা অর্জনই জীবনের সবচেয়ে বড় বিনিয়োগ। সঠিক গাইডলাইন আর প্রবল ইচ্ছা থাকলে, আপনিও হতে পারেন সফল উদ্যোক্তা। সুযোগ আপনার সামনে, কাজে লাগানোর এখনই সেরা সময়!</p>
+                <div class="mt-4 d-flex justify-content-end">
+                    <span class="badge bg-success text-white py-2 px-3 rounded-pill" style="font-size: 0.9rem;">🚀 আপনার ভবিষ্যৎ, আপনার হাতেই!</span>
+                </div>
+            </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<style>
+    .course-list .course-item {
+        background: rgba(255, 255, 255, 0.03);
+        margin-bottom: 12px;
+        padding: 15px 20px;
+        border-radius: 12px;
+        border-left: 4px solid #2ecc71;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+    .course-list .course-item:hover {
+        background: rgba(255, 255, 255, 0.08);
+        padding-left: 25px;
+    }
+</style>
+
+<!-- CTA -->
+
+<section data-aos="fade-left">
+
+  <div class="container">
+
+    <div class="cta">
+
+      <h2>
+        আজই শুরু করুন আপনার
+        Online Business Journey 🚀
+      </h2>
+
+      <p>
+        মাত্র ২০ মিনিটের ভিডিও দেখেই A to Z সবকিছু বুঝে যাবেন।
+      </p>
+
+      <a href="payment.html" class="btn btn-light btn-lg px-5 py-3 rounded-4 mt-4 fw-bold">
+        🔥 এখনই এনরোল করুন
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+    <!-- Footer -->
+    <footer style="background: #0a192f; color: #fff; padding: 2rem 0; margin-top: 0; border-top: 1px solid #2ecc71; margin-bottom: 0 !important;">
+        <div class="container text-center">
+            <h5 style="margin-bottom: 1rem; font-size: 1rem;">আমাদের সাথে যুক্ত হোন</h5>
+            <div class="d-flex justify-content-center gap-3 mb-3">
+                <a href="#" id="fb-link" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" id="wa-link" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" id="tt-link" class="social-link"><i class="fab fa-tiktok"></i></a>
+                <a href="#" id="yt-link" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+            <script src="js/config.js"></script>
+            <script>
+                document.getElementById('fb-link').href = socialLinks.facebook;
+                document.getElementById('wa-link').href = socialLinks.whatsapp;
+                document.getElementById('tt-link').href = socialLinks.tiktok;
+                document.getElementById('yt-link').href = socialLinks.youtube;
+            </script>
+            <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 15px auto; width: 50%;">
+            <p style="font-size: 0.75rem; color: rgba(255,255,255,0.5); margin: 0;">&copy; 2026 COINSTORE.BD - All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <style>
+        body { margin: 0; padding: 0 !important; background-color: #0a192f; }
+        html { height: 100%; background-color: #0a192f; }
+    </style>
+
+    <!-- Order Status Modal -->
+    <div id="statusModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeStatusModal()">×</span>
+            <div id="statusResult">
+                <!-- Result will be loaded here via AJAX -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Notification Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content" style="text-align: center; padding: 3rem 2rem;">
+            <div style="margin-bottom: 1.5rem;">
+                <div style="width: 80px; height: 80px; background: rgba(46, 204, 113, 0.1); color: #2ecc71; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3rem; margin: 0 auto; border: 4px solid #2ecc71; animation: scaleUp 0.5s ease-out;">
+                    ✓
+                </div>
+            </div>
+            <h2 id="successTitle" style="color: #fff; margin-bottom: 1rem;">Success!</h2>
+            <p id="successMessage" style="color: rgba(255,255,255,0.7); margin-bottom: 2rem; font-size: 1.1rem; line-height: 1.5;"></p>
+            <button onclick="closeSuccessModal()" class="btn btn-shop" style="width: 100%;">Continue</button>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="#" id="wa-float-btn" class="whatsapp-premium" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>চ্যাট করুন</span>
+    </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // WhatsApp Floating Button Link
+            const waFloatBtn = document.getElementById('wa-float-btn');
+            if (waFloatBtn && typeof socialLinks !== 'undefined') {
+                waFloatBtn.href = socialLinks.whatsapp;
+            }
+        });
+    </script>
+
+    <script>
+        window.supportWhatsApp = "8801845464034";
+        
+        function closeStatusModal() {
+            document.getElementById('statusModal').style.display = 'none';
+        }
+        
+        function closeSuccessModal() {
+            document.getElementById('successModal').style.display = 'none';
+        }
+
+        // Close modals on outside click
+        window.onclick = function(event) {
+            if (event.target.className === 'modal') {
+                event.target.style.display = 'none';
+            }
+        }
+    </script>
+    <script src="js/config.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const videoBtn = document.getElementById('video-btn');
+            if (videoBtn && typeof socialLinks !== 'undefined') {
+                videoBtn.href = socialLinks.videoUrl;
+                videoBtn.target = "_blank";
+            }
+        });
+    </script>
+    <script src="js/bootstrap.bundle.min.js.download"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: false,
+            mirror: true
+        });
+    </script>
+    
+
+<iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;" src="assets/saved_resource.html"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}" style="display: none;"></div></body></html>
