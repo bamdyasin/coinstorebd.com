@@ -32,10 +32,12 @@ body {
     color: white;
     line-height: 1.6;
     padding-top: 75px; 
+    overflow-x: hidden;
 }
 
 @media (max-width: 767px) {
     body { padding-top: 70px; }
+    header { padding-left: 15px; padding-right: 15px; }
 }
 
 /* Header & Navigation */
@@ -134,12 +136,13 @@ header {
     .tabs-bar { top: 70px; }
 }
 
-.tabs-container {
-    display: flex;
-    justify-content: center;
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
 }
 
 .tabs-group {
@@ -735,4 +738,34 @@ nav ul li a:hover {
     border-radius: 50%;
     color: #ffd700;
     font-size: 1.3rem;
+}
+
+/* Responsive Fixes */
+html, body {
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container,
+  .card,
+  .button,
+  section {
+    max-width: 100%;
+  }
 }
